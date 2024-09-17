@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é BR?</title>
+    <style>
+        input {
+            width: 80px;
+        }
+        button {
+            height: 21px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Será que você é Brasileiro &#x1F914?</h1>
+    <p>1: Brasil</p>
+    <p>2: EUA</p>
+    <p>3: França</p>
+    <p>4: Alemanha</p>
+    <p>5: Japão</p><br>
+    <h2>Qual seu pais?</h2>
+    <input type="number" name="pais" id="pais">
+    <button onclick="verificar()" >Verificar</button>
+    <div id="verf">
+
+    </div>
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('pais')
+            var vv = window.document.querySelector('div#verf')
+            var vrf = Number(pais.value)
+            if (vrf == 1) {
+                vv.innerHTML = `<p>Você é Brasileiro(a)</p>`
+            }
+            else {
+                vv.innerHTML = `<p>Você é Estrangeiro(a)</p>`
+            }
+        }
+    </script>
+</body>
+</html>
