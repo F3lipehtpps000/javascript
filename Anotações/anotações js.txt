@@ -27,6 +27,9 @@ Ex: var P = P/N  (saida: cria a variavel "P" que armazena uma palavra/número)
 Identificadores (valor de uma variavel) não podem começar com números e não podem conter
 espaços e nem comandos
 
+"use strict" = ativa o modo estrito/restrito
+Ex: "use strict"  (saida: o modo estrito é ativado)
+
 push = adiciona um valor a um Array
 Ex: V.push('P')  (saida: irá adicionar "P" a ultima posição de um Array)
 
