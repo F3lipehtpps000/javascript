@@ -11,6 +11,7 @@ I = id
 C = classe
 L = Link (de video, imagem etc)
 LA = Local do arquivo (dentro do pc)
+X = Qualquer valor, seja número, string, etc
 
 Para o JavaScript, os dias da semana são os seguites:
 0 = Domingo
@@ -21,11 +22,20 @@ Para o JavaScript, os dias da semana são os seguites:
 5 = Sexta
 6 = Sábado
 
-var/let = cria uma variavel
-Ex: var P = P/N  (saida: cria a variavel "P" que armazena uma palavra/número)
+var = cria uma variavel
+Ex: var P = X  (saida: cria a variavel "P" que armazena um valor X)
+
+let = cria uma variavel
+Ex: let P = X  (saida: cria a variavel "P" que armazena um valor X)
 
 Identificadores (valor de uma variavel) não podem começar com números e não podem conter
 espaços e nem comandos
+
+Diferença entre vai, let e const:
+var = cria uma variavel que pode ser acessada em qualquer escopo do código (exeto se estiver
+dentro de uma função);
+let = cria uma variavel que pode ser acessada apenas pelo mesmo escopo ou superior;
+const = cria uma variavel com um valor imutavel (sim, uma variavel não variavel)
 
 "use strict" = ativa o modo estrito/restrito
 Ex: "use strict"  (saida: o modo estrito é ativado)
@@ -118,8 +128,8 @@ Ex: document.createElement('option')  (saida: irá criar uma opção)
 
 innerHTML = serve para obter ou definir um HTML (texto e tags)
 Ex: var V = document.getElementsById('I')
-    V.innerHTML = 'P <br>' (saida: irá mudar o HTML dentro de uma variavel para "P" e uma quebra de
-			    linha)
+    V.innerHTML = 'P <br>' (saida: irá mudar o HTML dentro de uma variavel para "P" e uma
+                            quebra de linha)
 
 style = serve para aderir uma tag de css em algo
 Ex: V.style.color = 'black'  (saida: o que está dentro de "V" (se aparecer na tela) será
@@ -252,5 +262,5 @@ Ex:  var V = [7, 8, 9, 10]
 OBJETOS/OBJETCS
 Ex: var pessoa = {nome:'João',idade:'14'}  (saida: cria um objeto com os valores
 "nome" e "idade" que valem "João" e "14")
-(objetos são como arrays, porém seus índices não estão limitados a números. Uma variavel em um objeto
-pode ter uma função como valor)
+(objetos são como arrays, porém seus índices não estão limitados a números. Uma variavel
+em um objeto pode ter uma função como valor)
