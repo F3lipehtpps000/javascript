@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>Ouro</div>
+    <div>Prata</div>
+    <div>Bronze</div>
+
+    <script>
+        const objs1 = document.getElementsByTagName("div")
+        const objs2 = [...document.getElementsByTagName("div")]
+        objs2.forEach(element => {
+            element.innerHTML = "Medalha"
+        });
+
+        console.log(objs1)
+        console.log(objs2)
+    </script>
+</body>
+</html>
