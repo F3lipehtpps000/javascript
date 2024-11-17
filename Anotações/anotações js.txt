@@ -170,20 +170,23 @@ Ex: if (2>=3) {
 (saida: caso dois seja maior ou igual a três, irá enviar "true" ao node.js, caso
 contrário, enviará "false")
 
-switch = troca uma coisa por outra
-Ex: switch(V)
-       case P:
-          console.log('N')
-          break
-       case P:
-          console.log('N')
-          break
-       default:
-          console.log('[ERROR]')
-          break
-(saida: caso na variavel V tenha "P" como valor, irá aparecer na tela do node.js "N",
-caso o valor seja "N", aparecerá "P". Caso nenhuma opção anterior estiver certa, aparecerá
-"[ERROR]")
+switch = envia um resultado correspondente ao valor apresentado
+Ex: switch (V) {
+    case 1:
+            console.log(`P (1)`)
+            break
+        case 2:
+            console.log(`P (2)`)
+            break
+        case 3:
+            console.log(`P (3)`)
+            break
+        default:
+            console.log(`P (4)`)
+            break
+    }
+(saída: caso o valor de V seja 1, irá imprimir "P (1)", caso seja 2, imprimirá "P (2)".
+E assim por diante)
 
 while = cria uma repetição
 Ex: while (3 > 2) { console.log('P')}  (saida: enquanto 3 for maior do que 2, "P" será
