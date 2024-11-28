@@ -170,6 +170,26 @@ Ex: if (2>=3) {
 (saida: caso dois seja maior ou igual a três, irá enviar "true" ao node.js, caso
 contrário, enviará "false")
 
+break: para de rodar qualquer interação (if, while, etc)
+Ex: while (V1 < V2) {
+    console.log(`Olá, mundo! [${V1}]`)
+    if (V1 >= 10) {
+        break
+    }
+    V1++
+}
+(saída: irá imprimir "Olá mundo", até que o valor seja 10. Irá parar o código se chegar em 10)
+
+cotinue: para de rodar a iteração atual
+Ex: for(var V!=0; V1 < V2; V1++) {
+    console.log(`Olá, mundo! [${V!}]`)
+    if(V1%2==0) {
+        continue
+    }
+    V3++
+}
+(saída: se o valor for divisivel por dois, complementará o valor de V3 em 1)
+
 switch = envia um resultado correspondente ao valor apresentado
 Ex: switch (V) {
     case 1:
