@@ -1,4 +1,4 @@
-Repositórios Públicos
+/Repositórios Públicos
 github.com/gustavoguanabara
 gustavoguanabara.github.io
 
@@ -77,7 +77,8 @@ console.log = mostra algo na tela (do node.js, não do navegador)
 Ex: console.log('P')  (saida: no node.js aparecerá "P")
 
 return = retorna algo
-Ex: return 'P'  (saida: irá retornar "P")
+Ex: return 'P'  (saida: irá retornar "P" (não imprimir, só retornar))
+(após um return, todo o bloco de comando é parado (como o break faz))
 
 document.write = escreve algo
 Ex: document.write('P')  (saida: escreve "P")
