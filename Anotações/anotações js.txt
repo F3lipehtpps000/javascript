@@ -155,6 +155,15 @@ Ex: <div onclick="clicou()">
 (saida: quando clicar na divisória, irá disparar o evento "clicou", e então a função irá
 enviar "P")
 
+COMO FAZER UMA FUNCITIONS COM VALORES ILIMITADOS
+function somar(...valores) {
+    var V1 = 0
+    for(var V3 of valores) {
+        V1 += V3
+    }
+    return V1
+}
+
 if = faz o papel de "se" em uma condição
 Ex: if (2>=3) {
        console.log(true)
