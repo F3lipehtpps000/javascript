@@ -156,6 +156,8 @@ Ex: <div onclick="clicou()">
 enviar "P")
 
 COMO FAZER UMA FUNCITIONS COM VALORES ILIMITADOS
+Primeira forma (padrão):
+
 function somar(...valores) {
     var V1 = 0
     for(V2 of valores) {
@@ -163,6 +165,15 @@ function somar(...valores) {
     }
     return V1
 }
+
+Segunda forma (funções arrow):
+
+const somar = (...valores) => {
+        var V1 =  0
+        for (V2 of valores) {
+            V1 += V2
+        }
+        return V1}
 
 if = faz o papel de "se" em uma condição
 Ex: if (2>=3) {
