@@ -7,8 +7,8 @@ Anotações de HTML
 N = Número
 P = Palavra
 V = Variavel/Vetor(Array)
-I = id
-C = classe
+I = Id
+C = Classe
 L = Link (de video, imagem etc)
 LA = Local do arquivo (dentro do pc)
 X = Qualquer valor, seja número, string, etc
@@ -264,6 +264,28 @@ Ex: for (var V = 5; V!=0; V--) {
     }
 (Irá enviar "P" para o console, após isso irá adicionar somar 1 a variavel V até que
 ela seja igual a zero)
+
+COMO EXIBIR OS VALORES DE UM ARRAY EM UM LOOP (for)
+Forma 1 (for padrão):
+Ex: var V1 = [10, 20, 30, 40, 50]
+for(var V2 = 0; V2 < V1.length; V2++ {
+    console.log(`V1[V2]`)
+}
+(saída: irá imprimir "10, 20, 30, 40, 50")
+
+Forma 2 (for in):
+Ex: var num = [10, 20, 30, 40, 50]
+    for (i in num) {
+       console.log(num[i])
+    }
+(saída: irá imprimir "10, 20, 30, 40, 50")
+
+Forma 3 (for of):
+Ex: var num = [10, 20, 30, 40, 50]
+    for (i of num) {
+       console.log(i)
+    }
+(saída: irá imprimir "10, 20, 30, 40, 50")
 
 focus() = faz com você foque em algum elemento (como se tivesse o selecionado)
 Ex: V.focus()  (saida: irá focar no elemento/variavel V)
