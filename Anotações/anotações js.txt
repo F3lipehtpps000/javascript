@@ -174,8 +174,9 @@ const somar = (...valores) => {
             V1 += V2
         }
         return V1}
+(Irá somar todos os números inseridos em "somar()"
 
-yield = pausa a execução de uma função, retorna um valor e pode receber um valor diferente quando
+yield = pausa a execução de uma função, retorna um valor. Pode receber um valor diferente quando
         a execução é retomada.
 Ex: function* gerador() {
     yield "P1"
@@ -342,6 +343,14 @@ index.Of = Procura o índice pelo valor
 Ex:  var V = [7, 8, 9, 10]
      console.log(`O valor 8 tem o índice ${V.indexOf(8)}`)
 (saida: O valor 8 tem o índice 1)
+
+map = permite 'navegar' entre um array
+Ex: V = [P1, P2, P3, P4]
+    V.ma(p(X1, X2) => {
+       return `${X1} - ${X2}`
+}(
+(saída: irá exibir o(s) valor(es) dentro do array, travessão, o índice do(s) valor(es))
+(map funciona com outros grupos de elementos também)
 
 OBJETOS/OBJETCS
 Ex: var pessoa = {nome:'João',idade:'14'}  (saida: cria um objeto com os valores
