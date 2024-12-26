@@ -1,1 +1,0 @@
-var aviso = `Você tem que terminar o vídeo da aula 28.`

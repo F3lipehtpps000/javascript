@@ -155,7 +155,7 @@ Ex: <div onclick="clicou()">
 (saida: quando clicar na divisória, irá disparar o evento "clicou", e então a função irá
 enviar "P")
 
-COMO FAZER UMA FUNCITIONS COM VALORES ILIMITADOS
+COMO FAZER UMA FUNCITIONS COM VALORES ILIMITADOS (utilizando spread)
 Primeira forma (padrão):
 
 function somar(...valores) {
@@ -344,9 +344,9 @@ Ex:  var V = [7, 8, 9, 10]
      console.log(`O valor 8 tem o índice ${V.indexOf(8)}`)
 (saida: O valor 8 tem o índice 1)
 
-map = permite 'navegar' entre um array
+map = envia o valor e o índice dos valores num array
 Ex: V = [P1, P2, P3, P4]
-    V.ma(p(X1, X2) => {
+    V.map((X1, X2) => {
        return `${X1} - ${X2}`
 }(
 (saída: irá exibir o(s) valor(es) dentro do array, travessão, o índice do(s) valor(es))
