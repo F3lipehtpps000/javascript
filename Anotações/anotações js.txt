@@ -7,6 +7,7 @@ Anotações de HTML
 N = Número
 P = Palavra
 V = Variavel/Vetor(Array)
+F = Função
 I = Id
 C = Classe
 L = Link (de video, imagem etc)
@@ -193,6 +194,15 @@ Propriedades das funções:
 Funções podem ser dentro de uma variavel (arrows ou anonimas), ou podem ser apenas parte do código. É
 possivel preencher os parentesês no nome da variavel para fazer calculos, colocar uma função dentro da
 outra (ou só chamando ela), usar funções para ativar eventos no DOM, entre outros.
+
+this = serve para criar uma variavel do mesmo nome de um parâmetro em um função
+Ex: function F(V1, V2) {
+       this.V! = V!
+       this.V2 = V2
+       console.log(nome)
+       console.log(nota)
+}
+(saída: irá identificar que, V1 (parâmetro), é diferente de V1 (variavel), e o mesmo para V2)
 
 if = faz o papel de "se" em uma condição
 Ex: if (2>=3) {
