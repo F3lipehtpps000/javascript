@@ -1,0 +1,1 @@
+const divTodas = [...document.getElementsByTagName("div")]
