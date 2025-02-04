@@ -365,7 +365,15 @@ Ex: V = [P1, P2, P3, P4]
 (map funciona com outros grupos de elementos também)
 
 OBJETOS/OBJETCS
-Ex: var pessoa = {nome:'João',idade:'14'}  (saida: cria um objeto com os valores
-"nome" e "idade" que valem "João" e "14")
+Ex: var pessoa = {nome:'João', idade:'14'}  (saida: cria um objeto com os valores
+"nome" e "idade" que tem os valores "João" e "14" respectivamente)
 (objetos são como arrays, porém seus índices não estão limitados a números. Uma variavel
 em um objeto pode ter uma função como valor)
+
+addEventListener = adiciona um evento a alguma objeto
+Ex: var V = document.getElementsById('I')
+    V.addEventListener("click", F)
+    (saida: quando alguém clicar no objeto correspondente ao id I,irá disparar a função F)
+LISTA DE EVENTOS DISPARAVEIS
+
+onclick = dispara quando o mouse clicar nele
