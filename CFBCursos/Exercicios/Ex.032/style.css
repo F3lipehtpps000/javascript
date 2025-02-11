@@ -26,7 +26,6 @@ button {
     display: flex;
     justify-content: center;
     width: 200px;
-    border: 4 px solid #888;
     border-radius: 10px;
     padding: 10px;
     margin: 5px 0px;
@@ -35,8 +34,7 @@ button {
 
 .destaque {
     background-color: #800 !important;
-    color: #ffc !important;
-    border-color: #f00 !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .c1 {

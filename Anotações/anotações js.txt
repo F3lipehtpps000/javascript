@@ -139,12 +139,15 @@ style = serve para aderir uma tag de css em algo
 Ex: V.style.color = 'black'  (saida: o que está dentro de "V" (se aparecer na tela) terá
                               a cor preta)
 
+classList = adiciona, remove, ou altera a classe de um objeto
+Ex: V.classList.add('class')  (sáida: irá adicionar a classe 'class' ao item correspondente a V)
+
 img.src = faz com que você consiga mudar a foto em um lugar
 Ex: img.scr = "L/LA"  (saida: a foto será a mesma do L/LA)
 
 addEventListener = adicionar um evento
-Ex: V.addEventListener('onclick()')  (saida: a variavel V agora dispara um evento quando
-                                      clicada)
+Ex: V.addEventListener('click', F())  (saida: a variavel V agora dispara o evento F() quando
+                                       clicada)
 
 function = cria uma função
 Ex: <div onclick="clicou()">
@@ -197,14 +200,11 @@ Funções podem ser dentro de uma variavel (arrows ou anonimas), ou podem ser ap
 possivel preencher os parentesês no nome da variavel para fazer calculos, colocar uma função dentro da
 outra (ou só chamando ela), usar funções para ativar eventos no DOM, entre outros.
 
-this = serve para criar uma variavel do mesmo nome de um parâmetro em um função
-Ex: function F(V1, V2) {
-       this.V! = V!
-       this.V2 = V2
-       console.log(nome)
-       console.log(nota)
+this = serve para especificar que o elemento desejado é o que está sendo interagido
+Ex: function onclick() {
+    this.classList.add('class')
 }
-(saída: irá identificar que, V1 (parâmetro), é diferente de V1 (variavel), e o mesmo para V2)
+(saída: irá adicionar uma classe ao elemento clicado)
 
 if = faz o papel de "se" em uma condição
 Ex: if (2>=3) {
@@ -277,6 +277,13 @@ Ex: for (var V = 5; V!=0; V--) {
     }
 (Irá enviar "P" para o console, após isso irá adicionar somar 1 a variavel V até que
 ela seja igual a zero)
+
+forEach = é uma forma simplificada de loop para interagir com arrays
+Ex: var V = [1, 2, 3, 4, 5]
+    numeros.forEach(function(el, i ar) {
+        console.log(el, i, ar)
+    });
+(saída: irá exibir o elemento, o indicie dele, e o array original. isso para cada elemento)
 
 COMO EXIBIR OS VALORES DE UM ARRAY EM UM LOOP (for)
 Forma 1 (for padrão):
@@ -370,10 +377,11 @@ Ex: var pessoa = {nome:'João', idade:'14'}  (saida: cria um objeto com os valor
 (objetos são como arrays, porém seus índices não estão limitados a números. Uma variavel
 em um objeto pode ter uma função como valor)
 
-addEventListener = adiciona um evento a alguma objeto
+addEventListener = adiciona um evento a algum objeto
 Ex: var V = document.getElementsById('I')
     V.addEventListener("click", F)
     (saida: quando alguém clicar no objeto correspondente ao id I,irá disparar a função F)
+
 LISTA DE EVENTOS DISPARAVEIS
 
 onclick = dispara quando o mouse clicar nele
