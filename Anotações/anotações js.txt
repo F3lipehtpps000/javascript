@@ -123,9 +123,11 @@ Ex: var P = document.querySelector('p#msg')  (saida: irá selecionar o primeiro 
 querySelectorAll = igual com o querySelector normal, porém seleciona todos o valor encontrados
 Ex: Ex: var P = document.querySelector('p.msg')  (saida: irá selecionar todos os valores com a classe "msg")
 
-innerText = serve para obter ou definir um texto
-Ex: var V = document.getElementsById('I')
-    V.innerText = 'P' (saida: irá mudar o TEXTO dentro de uma variavel para "P")
+innerText = serve para obter ou definir um texto (apenas visiveis
+Ex: V.innerText = 'P' (saida: irá mudar o TEXTO dentro de uma variavel para "P")
+
+textContent = retorna todo o texto do elemento (até os que estão ocultos e elementos 'filhos')
+Ex: console.log(V.textContent)  (saida: vai retornar TODO o texto em V)
 
 createElement = cria um elemento
 Ex: document.createElement('option')  (saida: irá criar uma opção)
@@ -205,6 +207,9 @@ Ex: function onclick() {
     this.classList.add('class')
 }
 (saída: irá adicionar uma classe ao elemento clicado)
+
+closest = busca um elemento que estaja a cima na hierarquia DOM
+Ex: console.log(V.closest('P')  (saída: irá enviar o primeiro 'ancestral' de V com a tag P)
 
 if = faz o papel de "se" em uma condição
 Ex: if (2>=3) {

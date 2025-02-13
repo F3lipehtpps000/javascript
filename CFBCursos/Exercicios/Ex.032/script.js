@@ -12,14 +12,20 @@ for (var i = 0; i < cursos.length; i++) {
 }
 
 btnCopiar.addEventListener('click', function() {
-    var operacao = this.classList.contains('destaque')
-    if (operacao = true) {
-        console.log('Aaarrrrhhhggg')
-    } else {
-        var selecionados = document.querySelectorAll('.destaque')
-        selecionados.forEach(function(el) {
-            caixa2.appendChild(el)
-            el.classList.remove('destaque')
-        })
-    }
+    var selecionados = document.querySelectorAll('.destaque')
+    selecionados.forEach(elemento => {
+        if (elemento.closest('#caixa1')) {
+            var operacao = this.classList.contains('destaque')
+                selecionados.forEach(function(el) {
+                    caixa2.appendChild(el)
+                    el.classList.remove('destaque')
+                })
+        } else if (elemento.closest('#caixa2')) {
+            var operacao = this.classList.contains('destaque')
+                selecionados.forEach(function(el) {
+                    caixa1.appendChild(el)
+                    el.classList.remove('destaque')
+                })
+        }
+    })
 })
