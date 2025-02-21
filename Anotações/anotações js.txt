@@ -323,7 +323,7 @@ na ficha tecnica (apenas depois do "U+")
 
 COMO MOSTRAR A HORA ATUAL
 var V = new Date()
-var V2 = agora.getHours()
+var V2 = V.getHours()
 (saida: dentro da variavel V2 estará o horário atual)
 (é possivel pegar dias ou outra medida de tempo)
 
