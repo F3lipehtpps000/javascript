@@ -20,17 +20,11 @@ div {
     padding: 30px;
 }
 
-div#iniciar {
-    border-radius: 50%;
-}
-
-div#iniciar:hover, button:hover {
-    background-color: blueviolet;
+div#iniciar:hover, button:hover, div#resetar:hover {
+    background-color: rgb(177, 95, 255);
 }
 
 button {
-    width: ;
-    height: ;
     border: none;
     background-color: white;
 }

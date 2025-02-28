@@ -29,6 +29,14 @@ Ex: var P = X  (saida: cria a variavel "P" que armazena um valor X)
 let = cria uma variavel
 Ex: let P = X  (saida: cria a variavel "P" que armazena um valor X)
 
+const = cria uma variavel
+Ex: const P = X  (saida: cria a variavel "P" que armazena um valor X)
+
+Propriedades das funções:
+Funções podem ser dentro de uma variavel (arrows ou anonimas), ou podem ser apenas parte do código. É
+possivel preencher os parentesês no nome da variavel para fazer calculos, colocar uma função dentro da
+outra (ou só chamando ela), usar funções para ativar eventos no DOM, entre outros.
+
 Identificadores (valor de uma variavel) não podem começar com números e não podem conter
 espaços e nem comandos
 
@@ -104,13 +112,17 @@ Number = tranforma um valor em número (qualquer tipo)
 Ex: Number(V.value)  (saida: trata o valor presents na variavel "V" como númeors)
 
 String = tranforma um valor em string
-Ex: String.('P/N')  (saida: "P/N" será uma string)
+Ex: String('P/N')  (saida: "P/N" será uma string)
 
 String = tranforma um valor em string
-Ex: String.('P/N')  (saida: "P/N" será uma string)
+Ex: String('P/N')  (saida: "P/N" será uma string)
 
 toFixed() = vai fazer um numero terminar em X casas decimais
 Ex: 150.toFixed(2)  (saida: "150.00" (o número pode ser modificado))
+
+padStart = coloca um espaço em branco em alguma string até ela ter aquele tamanho
+Ex: V.padStart(2,"0")  (saida: caso o tamanho do conteudo em V for menor que 2, os espaços vazios serão
+                        preenchidos com "0" (sem as aspas))
 
 get = serve para selecionar elementos pela "classe"
 Ex: var P = document.getElementsByTagName('p')[0]  (saida: a variavel "P" terá o
@@ -196,11 +208,6 @@ const V = gerador();
 console.log(V.next().value)
 console.log(V.next().value)
 (saída: irá retornar "P1" da primeira vez, e da segunda "P2")
-
-Propriedades das funções:
-Funções podem ser dentro de uma variavel (arrows ou anonimas), ou podem ser apenas parte do código. É
-possivel preencher os parentesês no nome da variavel para fazer calculos, colocar uma função dentro da
-outra (ou só chamando ela), usar funções para ativar eventos no DOM, entre outros.
 
 this = serve para especificar que o elemento desejado é o que está sendo interagido
 Ex: function onclick() {
@@ -314,6 +321,12 @@ Ex: var num = [10, 20, 30, 40, 50]
 
 focus() = faz com você foque em algum elemento (como se tivesse o selecionado)
 Ex: V.focus()  (saida: irá focar no elemento/variavel V)
+
+setInteval() = executa uma função com um intervalo fixo de tempo entre cada execução
+Ex: setInteval(F, N)  (saida: irá executar a função F a cada N segundos)
+
+clearInteval() = para um intervalo criado por um setInteval
+Ex: clearInterval(F)  (saida: irá encerrar o cooldown da função F)
 
 EMOJIS
 \u{*codigo de emoji*}
